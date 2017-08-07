@@ -7,7 +7,7 @@ You can do a basic run with default settings with
 
 `fwserve`
 
-It will watch all files in the current directory on port 8081 using the "memory" scheme (check below for all schemes)
+It will watch all files in the current directory on port 8081, using the "word" mode of diffing, and using the "memory" scheme (check below for explanations)
 
 You can also run it with `fwserve -c <your config location>` where you pass the location of a config.json. The schema for
 the config is in this directory as configschema.json as a [JSON-Schema](http://json-schema.org/).
