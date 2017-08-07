@@ -15,11 +15,10 @@ the config is in this directory as configschema.json as a [JSON-Schema](http://j
 ## JSON schema description
 ```json
  {
-	"port": <the port number to listen on>,
-	"watchDir": <the directory to watch (will default to cwd)>,
-	"watchMode": <the scheme to watch the directory with (see below for schemes)>,
-	"diffModes": <a JSON object where the keys are the names of files, and the values are
-	which diff algorithim to use (diff by "word", "line", "sentence", or as "json")>
+	"port": "<the port number to listen on>",
+	"watchDir": "<the directory to watch (will default to cwd)>",
+	"watchMode": "<the scheme to watch the directory with (see below for schemes)>",
+	"diffModes": "<a JSON object where the keys are the names of files, and the values are which diff algorithim to use (diff by 'word', 'line', 'sentence', or as 'json')>"
  }
 ```
 ## Watch Mode Schemes
