@@ -1,0 +1,33 @@
+{
+  "name": "filewatcher-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saltyJeff/filewatcher-server.git"
+  },
+  "bin": {
+    "fwserve": "./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.8",
+    "@types/chokidar": "^1.7.1",
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^8.0.17",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "chokidar": "^1.7.0",
+    "diff": "^3.3.0",
+    "minimist": "^1.2.0",
+    "source-map-support": "^0.4.15"
+  }
+}

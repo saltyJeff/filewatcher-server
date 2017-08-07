@@ -1,0 +1,40 @@
+{
+	"title": "JSON schema the FileWatcher server",
+	"$schema": "http://json-schema.org/schema#",
+	"type": "object",
+	"properties": {
+		"port": {
+			"type": "number",
+			"default": 8081
+		},
+		"watchDir": {
+			"type": "string",
+			"default": "."
+		},
+		"watchMode": {
+			"type": "string",
+			"default": "memory",
+			"enum": [
+				"memory",
+				"watch"
+			]
+		},
+    	"diffModes": {
+      		"additionalProperties": {
+        		"type": "array",
+        		"items": {
+         			"type": "string",
+					"enum": [
+						"word",
+						"line",
+						"sentence",
+						"json"
+					]
+				}
+			}
+		}
+	},
+	"required": [
+		"port"
+	]
+}

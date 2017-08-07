@@ -1,0 +1,5 @@
+{
+	"$schema": "./configschema.json",
+	"port": 8081,
+	"watchMode": "memory"
+}
